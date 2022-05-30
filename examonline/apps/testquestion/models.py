@@ -8,7 +8,7 @@ from user.models import UserProfile, SubjectInfo
 class TestQuestionInfo(models.Model):
     name = models.CharField(max_length=500, default='', verbose_name='시험 문제 제목')
     subject = models.ForeignKey(SubjectInfo, on_delete=models.CASCADE, verbose_name='소속 과목', default='')
-    score = models.IntegerField(default=0, verbose_name='分值')
+    score = models.IntegerField(default=0, verbose_name='점수')
     tq_type = models.CharField(
         choices=(('xz', '객관식'), ('pd', '주관식'), ('tk', '빈칸 채우기')), max_length=2, verbose_name='시험 문제 유형', default='xz'
     )

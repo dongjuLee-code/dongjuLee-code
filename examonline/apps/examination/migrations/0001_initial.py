@@ -23,8 +23,8 @@ class Migration(migrations.Migration):
                 ('student_num', models.IntegerField(default=0, verbose_name='참가 인원수')),
                 ('actual_num', models.IntegerField(default=0, verbose_name='실제 참가자 수')),
                 ('exam_state', models.CharField(choices=[('0', '시험 준비'), ('1', '시험 진행 중'), ('2', '시험 끝')], default='0', max_length=1, verbose_name='시험 상태')),
-                ('exam_type', models.CharField(choices=[('pt', '普通'), ('ts', '特殊')], default='pt', max_length=2, verbose_name='类型')),
-                ('create_time', models.DateTimeField(default=datetime.datetime.now, verbose_name='创建时间')),
+                ('exam_type', models.CharField(choices=[('pt', '보통'), ('ts', '특별')], default='pt', max_length=2, verbose_name='유형')),
+                ('create_time', models.DateTimeField(default=datetime.datetime.now, verbose_name='생성 시간')),
             ],
             options={
                 'verbose_name': '시험 정보',
