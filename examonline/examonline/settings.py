@@ -89,7 +89,7 @@ DATABASES = {
         'USER': 'root',
         'PASSWORD': '258013',
         'HOST': '127.0.0.1',
-    }
+    }  
 }
 
 
